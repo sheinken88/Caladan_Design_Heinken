@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -451,5 +453,59 @@ body .contact #submit {
   padding: .9em 3em;
   width: unset;
   border-radius: 5em;
+}
+
+@media (max-width: 768px) {
+  * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+  }
+  body {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 100%;
+    height: 100vh;
+  }
+  nav, .contactme {
+    display: none;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  #mobile-cta {
+    display: revert;
+  }
+  #mobile-cta img {
+    width: 30px;
+  }
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  footer {
+    font-size: 00.8em;
+  }
+  footer .left-col {
+    row-gap: 10px;
+  }
+  footer .socialMedia {
+    padding: 10px;
+  }
+  footer .right-col p {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

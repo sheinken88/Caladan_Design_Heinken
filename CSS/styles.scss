@@ -378,6 +378,71 @@ body {
 
 
 
+}
+
+@media (max-width: 768px) {
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;700&family=Roboto:wght@100;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+    height: 100vh;
+
+}
+
+
+nav, .contactme {
+    display: none;
+}
+
+header {
+    display: flex;
+
+}
+
+#mobile-cta {
+    display: revert;
+
+    img {
+        width: 30px;
+    } 
+}
+
+.hero {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+footer {
+    font-size: 00.8em;
+
+    .left-col {
+        row-gap: 10px;
+    }
+
+    .socialMedia {
+        padding: 10px;
+    }
+
+    .right-col p {
+        text-align: center;
+    }
+
+
+
+}
 
 
 
